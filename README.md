@@ -13,6 +13,11 @@ This app allows the user to enter a location and view specific weather informati
 _You will need the following properly installed on your computer:_
 
 * [Node.js](https://nodejs.org/en/)
+ * Once installed, you will need to install gulp and bower globally:
+ ````
+ $ npm install gulp -g
+ $ npm install bower -g
+ ````
 * [Ruby](https://www.ruby-lang.org/en/downloads/)
  * Once installed, you will need to install sass globally:
    ````
@@ -28,22 +33,22 @@ _You will need your own API Key from [OpenWeatherMap](https://openweathermap.org
 ## Configuration/Dependencies
 
 * npm
-* gulp (must be installed globally one time)
-* bower (must be installed globally one time)
- * bower-files
- * browser-sync
- * browserify
- * vinyl-source-stream
- * del
- * jshint
- * gulp-concat
- * gulp-uglify
- * gulp-util
- * gulp-jshint
- * gulp-sass
- * gulp-sourcemaps
- * jquery
- * bootstrap
+* gulp
+* bower
+* bower-files
+* browser-sync
+* browserify
+* vinyl-source-stream
+* del
+* jshint
+* gulp-concat
+* gulp-uglify
+* gulp-util
+* gulp-jshint
+* gulp-sass
+* gulp-sourcemaps
+* jquery
+* bootstrap
 
 ## Setup/Installation
 
