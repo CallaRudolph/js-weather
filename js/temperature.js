@@ -20,4 +20,13 @@ Temperature.prototype.getTemperatureC = function(city, displayTemperatureCelsius
   });
 };
 
+Temperature.prototype.getTemperatureF = function(city, displayTemperatureFahrenheit) {
+  $.get('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + apiKey).then(function(response) {
+    var fahrenheit = Math.round(1.8 * (response.main.temp - 273) + 32);
+    displayTemperatureFahrenheit(city, fahrenheit);
+  }).fail(function(error) {
+    $('.showTemperatureF').text(error.responseJSON.message);
+  });
+};
+
 exports.temperatureModule = Temperature;
