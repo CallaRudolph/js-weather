@@ -8,7 +8,7 @@ $(document).ready(function() {
   var currentHumidityObject = new Humidity();
   $('#weatherH-location').click(function() {
     var city = $('#location').val();
-    $('#location').val("");
+    // $('#location').val("");
     currentHumidityObject.getHumidity(city, displayHumidity);
   });
 });

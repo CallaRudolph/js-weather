@@ -16,19 +16,19 @@ $(document).ready(function() {
   var currentTemperatureObject = new Temperature();
   $('#weatherTK-location').click(function() {
     var city = $('#location').val();
-    $('#location').val("");
+    // $('#location').val("");
     currentTemperatureObject.getTemperature(city, displayTemperature);
   });
 
   $('#weatherTC-location').click(function() {
     var city = $('#location').val();
-    $('#location').val("");
+    // $('#location').val("");
     currentTemperatureObject.getTemperatureC(city, displayTemperatureCelsius);
   });
 
   $('#weatherTF-location').click(function() {
     var city = $('#location').val();
-    $('#location').val("");
+    // $('#location').val("");
     currentTemperatureObject.getTemperatureF(city, displayTemperatureFahrenheit);
   });
 });
