@@ -1,10 +1,10 @@
 var apiKey = require('./../.env').apiKey;
 
-Weather = function() {
+Humidity = function() {
 
 };
 
-Weather.prototype.getHumidity = function(city, displayHumidity) {
+Humidity.prototype.getHumidity = function(city, displayHumidity) {
   $.get('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + apiKey).then(function(response) {
     displayHumidity(city, response.main.humidity);
   }).fail(function(error) {
@@ -12,4 +12,4 @@ Weather.prototype.getHumidity = function(city, displayHumidity) {
   });
 };
 
-exports.weatherModule = Weather;
+exports.humidityModule = Humidity;
